@@ -1,7 +1,5 @@
 import { Card } from "@/components/Cards";
 import NavBar from "@/components/NavBar";
-// import PlaceForm from "@/components/PlaceForm";
-
 
 
 
