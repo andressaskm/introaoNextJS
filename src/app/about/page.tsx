@@ -73,6 +73,7 @@ export default function About() {
             imageURL="https://elcadillacnegro.com/wp-content/uploads/2012/05/deputy-tommy-hawk-hill1.jpg?w=500"
             category={["Investigador"]}
           />
+
         </div>
       </div>
     </div>

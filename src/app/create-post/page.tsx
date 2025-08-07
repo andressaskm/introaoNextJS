@@ -4,6 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 import { Button } from "@/components/ui/button";
 import Card from "@/components/Card";
+import LikeButton from "@/components/LikeButton"
 
 
 type FormData = {
@@ -100,13 +101,15 @@ export default function CreatePostPage() {
                 </div>
             )}
 
-            <div className="">
+            {/* <div className="">
                 <Card
             title="Post"
             description="Os posts são textos criados para o seu divertimento!"
             imageURL="https://i.pinimg.com/736x/30/4b/9d/304b9d30ce04a83eed61b0c933b77240.jpg"/>
 
-            </div>
+            </div> */}
+
+            <LikeButton initial={0}/>
 
 
         </div>

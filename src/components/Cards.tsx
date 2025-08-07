@@ -1,11 +1,11 @@
 
-interface cardPorps {
+interface cardProps {
     title: string,
     description: string,
     icon: string
 }
 
-export function Card({ title, description, icon }: cardPorps) {
+export function Card({ title, description, icon }: cardProps) {
     return (
 
         <div className="
