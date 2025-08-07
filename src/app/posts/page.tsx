@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import NavBar from "@/components/NavBar";
+import Counter from "@/components/Counter";
 import CommentForm from "@/components/CommentForm";
 
 <NavBar
@@ -49,6 +50,8 @@ export default function PostsPage() {
           <p className="text-gray-600">{post.body}</p>
         </div>
       ))}
+
+      <Counter initial={0}/>
       
     </div>
   );
