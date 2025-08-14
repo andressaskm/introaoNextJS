@@ -1,4 +1,5 @@
 import { Card } from "@/components/Cards";
+import MiniDisplay from "@/components/miniDisplay";
 import NavBar from "@/components/NavBar";
 
 
@@ -43,6 +44,8 @@ export default function Home() {
       {/* <div className="flex justify-center">
         <PlaceForm lat={22} lng={-23}/>
       </div> */}
+
+      <MiniDisplay/>
 
 
     </div>
