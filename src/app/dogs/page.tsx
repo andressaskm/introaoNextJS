@@ -45,6 +45,7 @@ export default function DogPage() {
       >
         {loading ? "Carregando..." : "Nova imagem"}
       </button>
+
     </div>
   );
 }
