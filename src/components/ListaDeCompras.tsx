@@ -28,57 +28,20 @@ export default function ShoppingList() {
   }
 
   return (
-    <div>
-      <h1>Lista de Compras</h1>
-      <ul>
-        {shoppingList.map((item, index) =>(
-        <li key={index}>
-          <input onClick={() => handleCheck(index)} type="checkbox" id="input" />
-          <label htmlFor="input" className={item.comprado ? "mx-2 line-through" : "mx-2"}>{item.nome}</label>
-        </li>
+    <div className="flex justify-center items-center">
+      <div className="flex flex-col justify-center items-center bg-pink-300 rounded-2xl p-4 y-6 w-50">
+        <h1 className="font-bold mb-2">Lista de Compras</h1>
+        <ul>
+          {shoppingList.map((item, index) =>(
+          <li key={index}>
+            <input onClick={() => handleCheck(index)} type="checkbox" id="input" />
+            <label htmlFor="input" className={item.comprado ? "mx-2 line-through" : "mx-2"}>{item.nome}</label>
+          </li>
 
-        ))}
-      </ul>
+          ))}
+        </ul>
+      </div>
     </div>
   )
 
-
-
-
-  // const [purchased, setPurchased] = useState(itemsList);
-
-  // const handleClick = (id: number) => {
-  //   setPurchased(
-  //     purchased.map((item) =>
-  //       item.id === id ? { ...item, riscado: !item.riscado } : item
-  //     )
-  //   );  
-  // };
-
-  // return (
-  //   <div className="flex flex-col justify-center items-center">
-  //     <div className="bg-pink-300 rounded-2xl p-4 y-6">
-  //       <p className="font-bold mb-3">Lista de Compras</p>
-  //       <ul className="text-center">
-  //         {purchased.map((item) => (
-  //           <li
-  //             key={item.id}
-  //             className={`${item.riscado ? "line-through" : "none"} flex items-center gap-2 cursor-pointer`}
-  //           >
-  //               <button
-  //                   onClick={() => handleClick(item.id)}
-  //               >
-  //                   <FaCircleCheck color="#ff0084" size={19}/>
-  //               </button>
-
-              
-  //               {item.texto}
-              
-
-  //           </li>
-  //         ))}
-  //       </ul>
-  //     </div>
-  //   </div>
-  // );
 }
