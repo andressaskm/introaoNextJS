@@ -1,7 +1,11 @@
 import { Card } from "@/components/Cards";
 import MiniDisplay from "@/components/miniDisplay";
 import NavBar from "@/components/NavBar";
+
+import ListaDeCompras from "@/components/ListaDeCompras"
+
 import Calculadora from "@/components/Calculadora"
+
 
 
 
@@ -46,7 +50,13 @@ export default function Home() {
     //     <PlaceForm lat={22} lng={-23}/>
     //   </div> */}
 
+
+      {/* <MiniDisplay/> */}
+
+      <ListaDeCompras/>
+
     //   {/* <MiniDisplay/> */}
+
 
       
     // </div>
