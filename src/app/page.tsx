@@ -3,6 +3,7 @@ import MiniDisplay from "@/components/miniDisplay";
 import NavBar from "@/components/NavBar";
 
 import ListaDeCompras from "@/components/ListaDeCompras"
+import BotaoReproducao from "@/components/BotaoReproducao"
 
 import Calculadora from "@/components/Calculadora"
 
@@ -53,7 +54,9 @@ export default function Home() {
 
       {/* <MiniDisplay/> */}
 
-      <ListaDeCompras/>
+      {/* <ListaDeCompras/> */}
+
+      <BotaoReproducao/>
 
     //   {/* <MiniDisplay/> */}
 
