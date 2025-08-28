@@ -2,6 +2,7 @@ import { Card } from "@/components/Cards";
 import MiniDisplay from "@/components/miniDisplay";
 import NavBar from "@/components/NavBar";
 import ListaDeCompras from "@/components/ListaDeCompras"
+import BotaoReproducao from "@/components/BotaoReproducao"
 
 
 
@@ -48,7 +49,9 @@ export default function Home() {
 
       {/* <MiniDisplay/> */}
 
-      <ListaDeCompras/>
+      {/* <ListaDeCompras/> */}
+
+      <BotaoReproducao/>
 
 
     </div>
