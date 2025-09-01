@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react';
 
 function Lampada() {
@@ -8,14 +10,16 @@ function Lampada() {
   };
 
   return (
-    <div>
-      <img
+    <div className='flex flex-col items-center justify-center h-52 w-52'>
+      <img className=''
         src={ligada ? 'lampada_acesa.png' : 'lampada_apagada.png'}
         alt={ligada ? 'Lâmpada acesa' : 'Lâmpada apagada'}
       />
-      <button onClick={alternarLampada}>
+      <div className='flex flex-col items-center'>
+        <button className='bg-blue-700 w-32 h-10 text-white rounded-4xl' onClick={alternarLampada}>
         {ligada ? 'Desligar' : 'Ligar'}
       </button>
+      </div>
     </div>
   );
 }
