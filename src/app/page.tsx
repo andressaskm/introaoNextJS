@@ -2,9 +2,7 @@ import { Card } from "@/components/Cards";
 import MiniDisplay from "@/components/miniDisplay";
 import NavBar from "@/components/NavBar";
 
-import ListaDeCompras from "@/components/ListaDeCompras"
-import BotaoReproducao from "@/components/BotaoReproducao"
-
+import Lampada from "@/components/Lampada"
 import Calculadora from "@/components/Calculadora"
 
 
@@ -52,20 +50,14 @@ export default function Home() {
     //   </div> */}
 
 
-      {/* <MiniDisplay/> */}
+      // /* <MiniDisplay/> */
 
-      {/* <ListaDeCompras/> */}
-
-      <BotaoReproducao/>
-
-    //   {/* <MiniDisplay/> */}
+    <div className="flex flex-col justify-center items-center w-full h-screen">
+      <Lampada/> 
+    </div>
 
 
-      
-    // </div>
 
-    <div className="flex justify-center items-center h-screen w-full">
-        <Calculadora/>
-      </div>
+
   );
 }
